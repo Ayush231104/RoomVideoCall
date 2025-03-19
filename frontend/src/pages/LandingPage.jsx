@@ -33,7 +33,7 @@ export default function LandingPage() {
 			</div>
 		</div>
 		<div>
-			<img src="\public\abc.png" alt="" />
+			<img src="/abc.png" alt="" />
 		</div>
 	  </div>
     </div>

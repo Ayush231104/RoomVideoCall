@@ -38,11 +38,13 @@ export default function History() {
     }
   return (
     <div>
-        <IconButton onClick={() => {
+        <IconButton style={{color:"wheat", padding:"10px"}} onClick={() => {
                 routeTo("/home")
             }}>
             <HomeIcon />
+            Home
         </IconButton >
+        
         {
             (meetings.length !== 0) ? meetings.map((e, i) => {
                 

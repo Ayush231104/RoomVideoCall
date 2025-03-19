@@ -1,0 +1,137 @@
+/* .navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 20px;
+    text-align: center;
+  }
+  
+  .meetContainer {
+    display: flex;
+    padding-inline: 20px;
+    height: 80vh;
+    gap: 10vw;
+    justify-content: center;
+  }
+  
+  .leftPanel {
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightPanel {
+    display: flex;
+    align-items: center;
+  }
+  
+  .rightPanel > img {
+    width: 30vw;
+    height: auto;
+    border-radius: 20px;
+  }
+  
+   */
+
+   /* General Styles */
+   * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #1e1e2e; /* Dark background */
+    color: #e0e0e0; /* Light text */
+}
+
+/* Navbar */
+.navBar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #2a2f45; /* Darker navbar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+/* Navbar Items */
+.navBar div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.navBar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #f0f0f0; /* Light text */
+}
+
+.navBar p {
+    font-size: 16px;
+    font-weight: 500;
+    color: #bbbbbb; /* Subtle contrast */
+}
+
+/* Meeting Container */
+.meetContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 20px;
+    gap: 5vw;
+    flex-wrap: wrap;
+}
+
+/* Left Panel */
+.leftPanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 500px;
+    text-align: center;
+}
+
+.leftPanel h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+/* Input and Button Container */
+.inputContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+
+/* Right Panel */
+.rightPanel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightPanel img {
+    width: 30vw;
+    max-width: 400px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+}
+
+/* Styled Buttons */
+.styledButton {
+    background-color: #3b82f6 !important; /* Soft blue */
+    color: white !important;
+    font-weight: bold !important;
+    padding: 10px 20px !important;
+}

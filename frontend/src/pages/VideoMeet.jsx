@@ -422,12 +422,15 @@ export default function VideoMeet() {
   return (
     <div>
         {askForUsername === true ? 
-            <div>
-                <h2>Enter Into Lobby</h2>
-                <TextField id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
-                <Button variant="contained" onClick={connect}>Connect</Button>
+            <div className={styles.lobbyContainer}>
                 <div>
-                    <video ref={localVideoRef} autoPlay muted></video>
+                    <video className={styles.lobbyVideo} ref={localVideoRef} autoPlay muted></video>
+                </div>
+                <div>
+                <h1 style={{paddingBottom: "20px", textAlign: "center"}}>Enter Into Lobby</h1>
+                <p>Enter the meeting code</p>
+                <TextField style={{backgroundColor:"whitesmoke",borderRadius:"10px",width:"100%",height:"auto", margin: "10px"}} id="outlined-basic" label="Username" value={username} onChange={e => setUsername(e.target.value)} variant="outlined" />
+                <Button style={{width:"80%", textAlign: "center"}}  variant="contained" onClick={connect}>Enter</Button>
                 </div>
             </div>:
             
