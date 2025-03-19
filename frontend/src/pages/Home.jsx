@@ -23,7 +23,11 @@ function Home() {
     <>
      <div className="navBar">
            <div style={{display: "flex", alignItems: "center"}}>
-                <h2>Room Video Call</h2>
+                <IconButton onClick={() => {
+                    navigate("/");
+                }}>
+                    <h2>Room Video Call</h2>
+                </IconButton>
            </div>
 
            <div style={{display: "flex", alignItems: "center"}}>
