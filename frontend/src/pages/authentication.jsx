@@ -140,6 +140,11 @@ export default function Authentication() {
                 id="password"
                 autoComplete="current-password"
                 onChange={(e) => setPassword(e.target.value)}
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter') {
+                    handleAuth();
+                  } 
+                }}
               />
               
               <p style={{color: "red"}}>{error}</p>
@@ -158,11 +163,11 @@ export default function Authentication() {
         </Grid>
       </Grid>
 
-                  <Snackbar
-                    open={open}
-                    autoHideDuration={4000}
-                    message={message}
-                  />
+      <Snackbar
+        open={open}
+        autoHideDuration={4000}
+        message={message}
+      />
     </ThemeProvider>
   );
 }
