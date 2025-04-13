@@ -491,9 +491,10 @@ export default function VideoMeet() {
                 
                 <div className={styles.conferenceView}>
                     <video className={styles.meetUserVideo} ref={localVideoRef} autoPlay muted></video>
+                    <div  className={styles.meetGuestContainer}>
                     {videos.map((video) =>(
                         <div  key={video.socketId}>
-                            <video 
+                            <video className={styles.meetGuestVideo}
                                 data-socket={video.socketId}
                                 ref={ref => {
                                     if (ref && video.stream) {
@@ -506,6 +507,7 @@ export default function VideoMeet() {
                             </video>
                         </div>
                     ))}
+                    </div>
                 </div>
             </div>
 
